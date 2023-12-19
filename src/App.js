@@ -11,6 +11,7 @@ import Vite from './components/work/Vite'
 import Gyobok from './components/work/Gyobok'
 import Youtube from './components/work/Youtube'
 import Movie from './components/work/Movie'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path='/gyobok' element={<Gyobok />} />
           <Route path='/youtube' element={<Youtube />} />
           <Route path='/movie' element={<Movie />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </Main>

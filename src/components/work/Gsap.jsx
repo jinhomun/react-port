@@ -4,43 +4,43 @@ const Gsap = () => {
     return (
         <>
             <div id="item__wrap2" class="fixed">
-                <div class="item title">
-                    <div class="list">
+                <div className="item title">
+                    <div className="list">
                         <ul>
-                            <li class="active"><a class="pageLink" href="gsap.html">1</a></li>
-                            <li><a class="pageLink" href="quiz.html">2</a></li>
-                            <li><a class="pageLink" href="search.html">3</a></li>
+                            <li className="active"><a href="/gsap">1</a></li>
+                            <li><a href="/quiz">2</a></li>
+                            <li><a href="/search">3</a></li>
                         </ul>
                     </div>
                     <h2>gsap</h2>
                 </div>
-                <div class="item display"></div>
-                <div class="item home ">
-                    <a class="pageLink" href="../index.html">
+                <div className="item display"></div>
+                <div className="item home ">
+                    <a className="pageLink" href="/">
                         <p>HOME</p>
                         <img src="../assets/img/Arrow 12.svg" alt="화살표"></img>
                     </a>
                 </div>
-                <div class="item noR home">
-                    <a class="pageLink" href="quiz.html">
+                <div className="item noR home">
+                    <a className="pageLink" href="/quiz">
                         <p>QUIZ</p>
                         <img src="../assets/img/Arrow 12.svg" alt="화살표"></img>
                     </a>
                 </div>
-                <div class="item skill">
+                <div className="item skill">
                     <h3>skill</h3>
-                    <p class="desc">
+                    <p className="desc">
                         VSC | JavaScript<br />
                         HTML | CSS<br />
                         gsap | Git</p>
                 </div>
-                <div class="item"></div>
-                <div class="item noR img">
+                <div className="item"></div>
+                <div className="item noR img">
                     <img src="../assets/img/gsap.png" alt="gsap01" />
                 </div>
-                <div class="item"></div>
-                <div class="item black">
-                    <p class="desc">
+                <div className="item"></div>
+                <div className="item black">
+                    <p className="desc">
                         GSAP(또는 GreenSock Animation Platform)은 웹 애니메이션을 구축하는 데 사용되는 강력한 JavaScript 라이브러리 중 하나입니다. GSAP은 다양한
                         애니메이션 효과를 구현하는 데 도움이 되며,
                         그 중에서도 "Parallax"는 특정 요소가 스크롤됨에 따라 다르게 움직이는 효과를 지칭합니다.
@@ -52,24 +52,24 @@ const Gsap = () => {
                         메뉴 숨기기 효과,가로 효과,가로 세로 효과,나타나기 효과 ,스무스 효과<br />
                     </p>
                 </div>
-                <div class="item noB"></div>
-                <div class="item"></div>
-                <div class="item noR"></div>
-                <div class="item noB"></div>
-                <div class="item noB"></div>
-                <div class="item noB title">
+                <div className="item noB"></div>
+                <div className="item"></div>
+                <div className="item noR"></div>
+                <div className="item noB"></div>
+                <div className="item noB"></div>
+                <div className="item noB title">
                     <h3>code view</h3>
                     <a href="https://github.com/jinhomun/webs2024/tree/main/javascript/gsap">
-                        <p class="desc">
+                        <p className="desc">
                             skill를 이용하여 만든 소스를
                             깃을 통해 볼 수 있습니다.
                         </p>
                     </a>
                 </div>
-                <div class="item noR noB title">
+                <div className="item noR noB title">
                     <h3>site view</h3>
                     <a href="https://github.com/jinhomun/webs2024/tree/main/javascript/gsap">
-                        <p class="desc">
+                        <p className="desc">
                             깃에 올린 파일을 직접 볼 수 있습니다.
                         </p>
                     </a>

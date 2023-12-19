@@ -18,9 +18,9 @@ const Home = () => {
                     </p>
                     <div className="list">
                         <ul>
-                            <li><a className="pageLink" href="../section/gsap.html">1</a></li>
-                            <li><a className="pageLink" href="../section/quiz.html">2</a></li>
-                            <li><a className="pageLink" href="../section/search.html">3</a></li>
+                            <li><a href="/gsap">1</a></li>
+                            <li><a href="/quiz">2</a></li>
+                            <li><a href="/search">3</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,8 +33,8 @@ const Home = () => {
                         통해, 저는 사이트 코딩의 모든 측면을 섬세하게 다루는 전문성을 키워왔습니다</p>
                     <div className="list">
                         <ul>
-                            <li><a className="pageLink" href="../section/w.point.html">1</a></li>
-                            <li><a href="section/vite.html">2</a></li>
+                            <li><a href="/wpoint">1</a></li>
+                            <li><a href="/vite">2</a></li>
                             {/* <li><a href="section/w.point.html">3</a></li> */}
                         </ul>
                     </div>
@@ -51,9 +51,9 @@ const Home = () => {
                         "'MOVIE SITE': Vue.js와 API로 혁신적인 영화 탐색."</p>
                     <div className="list">
                         <ul>
-                            <li><a className="pageLink" href="../section/gyobok.html">1</a></li>
-                            <li><a className="pageLink" href="../section/youtube.html">2</a></li>
-                            <li><a className="pageLink" href="../section/movie.html">3</a></li>
+                            <li><a href="/gyobok">1</a></li>
+                            <li><a href="/youtube">2</a></li>
+                            <li><a href="/movie">3</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const Home = () => {
                     <h3>WELCOME</h3>
                 </div>
                 <div className="item black__about">
-                    <img src="process.env.PUBLIC_URL + ../assets/img/about1.png " alt="이미지" />
+                    <img src="../assets/img/about1.png " alt="이미지" />
                 </div>
                 <div className="item noR">
                     <p className="desc">
@@ -77,7 +77,7 @@ const Home = () => {
 
                 </div>
                 <div className="item noB title">
-                    <a className="pageLink" href="../section/aboutme.html">
+                    <a href="/aboutme">
                         <h3>ABOUT ME</h3>
                         <p className="desc">
                             안녕하세요!<br />
@@ -94,7 +94,7 @@ const Home = () => {
                     <a href="mailto:answlsgh95@gmail.com">
                         <img src="../assets/img/mail.svg" alt="" />
                     </a>
-                    <a className="pageLink" href="../section/contact.html">
+                    <a href="/contact">
                         <img src="../assets/img/comment.svg" alt="" />
                     </a>
                 </div>
