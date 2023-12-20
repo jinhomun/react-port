@@ -13,10 +13,7 @@ import comment from '../assets/img/comment.svg'
 const Home = () => {
 
     useEffect(() => {
-        gsap.set(".item.i1 .item__inner", {
-            opacity: 0,
-            y: 30
-        });
+        
         gsap.set(".item.i3 .item__inner", {
             opacity: 0,
             y: 30
@@ -30,6 +27,10 @@ const Home = () => {
             y: 30
         });
         gsap.set(".item.i7 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i1 .item__inner", {
             opacity: 0,
             y: 30
         });
@@ -59,11 +60,7 @@ const Home = () => {
         });
 
 
-        gsap.to(".item.i1 .item__bg", {
-            height: "0%",
-            ease: "power3.inOut",
-            delay: 0.1
-        });
+       
         gsap.to(".item.i3 .item__bg", {
             height: "0%",
             ease: "power3.inOut",
@@ -84,6 +81,11 @@ const Home = () => {
             ease: "power3.inOut",
             delay: 1.2
         })
+        gsap.to(".item.i1 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.5
+        });
         gsap.to(".item.i11 .item__bg", {
             height: "0%",
             ease: "power3.inOut",
@@ -131,11 +133,7 @@ const Home = () => {
         })
 
 
-        gsap.to(".item.i1 .item__inner", {
-            opacity: 1,
-            delay: 0.3,
-            y: 0
-        });
+       
         gsap.to(".item.i3 .item__inner", {
             opacity: 1,
             delay: 0.6,
@@ -154,6 +152,11 @@ const Home = () => {
         gsap.to(".item.i7 .item__inner", {
             opacity: 1,
             delay: 1.5,
+            y: 0
+        });
+        gsap.to(".item.i1 .item__inner", {
+            opacity: 1,
+            delay: 1.8,
             y: 0
         });
         gsap.to(".item.i11 .item__inner", {
@@ -186,8 +189,31 @@ const Home = () => {
             delay: 2.3,
             y: 0
         });
-    }, [])
 
+        const linkClickHandler = (linkSelector) => {
+            document.querySelector(linkSelector).addEventListener('click', (event) => {
+              event.preventDefault(); // Prevent the default behavior of the link
+          
+              gsap.to(".item__bg", {
+                height: "100%",
+                ease: "power3.inOut",
+                onComplete: () => {
+                  // Navigate to the link after the animation completes
+                  window.location.href = event.target.href;
+                },
+              });
+            });
+          };
+          
+          // Call the linkClickHandler function for each link
+          linkClickHandler(".item.i3 .list a");
+          linkClickHandler(".item.i6 .list a");
+          linkClickHandler(".item.i9 .list a");
+          // ... (repeat for other links)
+        }, []);
+
+           
+           
     return (
         <>
             <div id="item__wrap" className="fixed">
