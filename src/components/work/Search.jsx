@@ -1,4 +1,6 @@
 import React from 'react';
+import arrow from '../../assets/img/Arrow11.svg'
+import imgSearch from '../../assets/img/search.png'
 
 const Search = () => {
     return (
@@ -16,26 +18,26 @@ const Search = () => {
                 <div className="item home">
                     <a href="/">
                         <p>HOME</p>
-                        <img src="../assets/img/Arrow 12.svg" alt="화살표" />
+                        <img src={arrow} alt="화살표" />
                     </a>
                 </div>
                 <div className="item noR home">
                     <a href="/gsap">
                         <p>GSAP</p>
-                        <img src="../assets/img/Arrow 12.svg" alt="화살표" />
+                        <img src={arrow} alt="화살표" />
                     </a>
                 </div>
                 <div className="item skill">
                     <h3>skill</h3>
                     <p className="desc">
-                        VSC | JavaScript<br/>
-                        HTML | CSS<br/>
+                        VSC | JavaScript<br />
+                        HTML | CSS<br />
                         JSON | Git
                     </p>
                 </div>
                 <div className="item"></div>
                 <div className="item noR img">
-                    <img src="../assets/img/search.png" alt="search01" />
+                    <img src={imgSearch} alt="search01" />
                 </div>
                 <div className="item"></div>
                 <div className="item black">

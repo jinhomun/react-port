@@ -1,4 +1,6 @@
 import React from 'react'
+import arrow from '../../assets/img/Arrow11.svg'
+import imgGsap from '../../assets/img/gsap.png'
 
 const Gsap = () => {
     return (
@@ -18,13 +20,13 @@ const Gsap = () => {
                 <div className="item home ">
                     <a className="pageLink" href="/">
                         <p>HOME</p>
-                        <img src="../assets/img/Arrow 12.svg" alt="화살표"></img>
+                        <img src={arrow} alt="화살표"></img>
                     </a>
                 </div>
                 <div className="item noR home">
                     <a className="pageLink" href="/quiz">
                         <p>QUIZ</p>
-                        <img src="../assets/img/Arrow 12.svg" alt="화살표"></img>
+                        <img src={arrow} alt="화살표"></img>
                     </a>
                 </div>
                 <div className="item skill">
@@ -36,7 +38,7 @@ const Gsap = () => {
                 </div>
                 <div className="item"></div>
                 <div className="item noR img">
-                    <img src="../assets/img/gsap.png" alt="gsap01" />
+                    <img src={imgGsap} alt="gsap01" />
                 </div>
                 <div className="item"></div>
                 <div className="item black">
