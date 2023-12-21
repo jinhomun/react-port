@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap';
+import RepleList from '../components/reple/RepleList'
+import RepleWrite from '../components/reple/RepleWrite'
 
 import insta from '../assets/img/insta.svg'
 import github from '../assets/img/github.svg'
@@ -237,38 +239,8 @@ const Contact = () => {
                 <div className="item i5 comment">
                     <div className="item__inner">
                         <h3>COMMENT LIST</h3>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요 안녕하세요 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
-                        <div className="comment__container">
-                            <p className="name">작성자: 문**</p>
-                            <p className="text">댓글: 안녕하세요</p>
-                        </div>
+                        <RepleList />
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -279,9 +251,8 @@ const Contact = () => {
                 <div className="item i7 commentinfo">
                     <div className="item__inner">
                         <h3>COMMENT</h3>
-                        <input className="name-input" placeholder="Your Name" />
-                        <input className="comment-input" placeholder="Input Comment" />
-                        <button className="submit">등록</button>
+                        <RepleWrite />
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
