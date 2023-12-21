@@ -3,17 +3,13 @@ import gsap from 'gsap';
 // img
 import imgME from '../assets/img/about1.png'
 import KOR from '../assets/img/KOR.png'
-import insta from '../assets/img/insta.svg'
-import github from '../assets/img/github.svg'
-import mail from '../assets/img/mail.svg'
-import comment from '../assets/img/comment.svg'
 
 
 
 const Home = () => {
 
     useEffect(() => {
-        
+
         gsap.set(".item.i3 .item__inner", {
             opacity: 0,
             y: 30
@@ -60,7 +56,7 @@ const Home = () => {
         });
 
 
-       
+
         gsap.to(".item.i3 .item__bg", {
             height: "0%",
             ease: "power3.inOut",
@@ -133,7 +129,7 @@ const Home = () => {
         })
 
 
-       
+
         gsap.to(".item.i3 .item__inner", {
             opacity: 1,
             delay: 0.6,
@@ -190,30 +186,45 @@ const Home = () => {
             y: 0
         });
 
-        const linkClickHandler = (linkSelector) => {
-            document.querySelector(linkSelector).addEventListener('click', (event) => {
-              event.preventDefault(); // Prevent the default behavior of the link
-          
-              gsap.to(".item__bg", {
-                height: "100%",
-                ease: "power3.inOut",
-                onComplete: () => {
-                  // Navigate to the link after the animation completes
-                  window.location.href = event.target.href;
-                },
-              });
-            });
-          };
-          
-          // Call the linkClickHandler function for each link
-          linkClickHandler(".item.i3 .list a");
-          linkClickHandler(".item.i6 .list a");
-          linkClickHandler(".item.i9 .list a");
-          // ... (repeat for other links)
-        }, []);
+        const linkClickHandler = (linkSelector, destination) => {
+            const links = document.querySelectorAll(linkSelector);
 
-           
-           
+            if (links.length > 0) {
+                links.forEach(link => {
+                    link.addEventListener('click', (event) => {
+                        event.preventDefault();
+
+                        gsap.to(".item__bg", {
+                            height: "100%",
+                            ease: "power3.inOut",
+                            onComplete: () => {
+                                // Use window.location.pathname to navigate
+                                window.location.pathname = destination;
+                            },
+                        });
+                    });
+                });
+            }
+        };
+
+        // 함수 호출 - 각 링크에 대해 개별적으로 호출
+        linkClickHandler(".item.i3 .list a:nth-child(1)", "/gsap");
+        linkClickHandler(".item.i3 .list a:nth-child(2)", "/quiz");
+        linkClickHandler(".item.i3 .list a:nth-child(3)", "/search");
+
+        linkClickHandler(".item.i6 .list a:nth-child(1)", "/wpoint");
+        linkClickHandler(".item.i6 .list a:nth-child(2)", "/vite");
+
+        linkClickHandler(".item.i9 .list a:nth-child(1)", "/gyobok");
+        linkClickHandler(".item.i9 .list a:nth-child(2)", "/youtube");
+        linkClickHandler(".item.i9 .list a:nth-child(3)", "/movie");
+
+        linkClickHandler(".item.i15 a", "/aboutme");
+        linkClickHandler(".item.i16 a", "/contact");
+    }, []);
+
+
+
     return (
         <>
             <div id="item__wrap" className="fixed">
@@ -362,17 +373,10 @@ const Home = () => {
                 </div>
                 <div className="item i16 noR noB">
                     <div className="item__inner">
-                        <a href="https://www.instagram.com/coding_jinho/">
-                            <img src={insta} alt="" />
-                        </a>
-                        <a href="https://github.com/jinhomun">
-                            <img src={github} alt="" />
-                        </a>
-                        <a href="mailto:answlsgh95@gmail.com">
-                            <img src={mail} alt="" />
-                        </a>
                         <a href="/contact">
-                            <img src={comment} alt="" />
+                            <h3>CONTACT ME</h3>
+                            <p className="desc"></p>
+
                         </a>
 
                     </div>

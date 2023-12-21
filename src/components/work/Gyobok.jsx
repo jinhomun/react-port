@@ -9,7 +9,7 @@ import SliderScript from '../../assets/script/SliderScript'
 
 const Gyobok = () => {
     useEffect(() => {
-        
+
         gsap.set(".item.i1 .item__inner", {
             opacity: 0,
             y: 30
@@ -42,10 +42,10 @@ const Gyobok = () => {
             opacity: 0,
             y: 30
         });
-     
 
 
-       
+
+
         gsap.to(".item.i1 .item__bg", {
             height: "0%",
             ease: "power3.inOut",
@@ -118,7 +118,7 @@ const Gyobok = () => {
         // })
 
 
-       
+
         gsap.to(".item.i1 .item__inner", {
             opacity: 1,
             delay: 0.6,
@@ -159,11 +159,11 @@ const Gyobok = () => {
             delay: 2.1,
             y: 0
         });
-    
+
         const linkClickHandler = (linkSelector, destination) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
                 event.preventDefault(); // Prevent the default behavior of the link
-        
+
                 gsap.to(".item__bg", {
                     height: "100%",
                     ease: "power3.inOut",
@@ -174,28 +174,28 @@ const Gyobok = () => {
                 });
             });
         };
-        
+
         // // Call the linkClickHandler function for each link with the correct destination
         // linkClickHandler(".item.i1 .list a", "/gsap","/quiz","/search");
         linkClickHandler(".item.i3 a", "/");
         linkClickHandler(".item.i4 a", "/youtube");
-        
+
         // ...
-      
-        }, []);
+
+    }, []);
     return (
         <>
             <div id="item__wrap2" className="fixed">
                 <div className="item i1 title">
                     <div className="item__inner">
-                            {/* <ul>
+                        {/* <ul>
                             <li className="active"><a href="/gyobok">1</a></li>
                             <li><a href="/youtube">2</a></li>
                             <li><a href="/movie">3</a></li>
                         </ul> */}
                         <h2 className="long">gyobok site</h2>
                     </div>
-                   <div className="item__bg"></div>
+                    <div className="item__bg"></div>
                 </div>
                 <div className="item i2">
                     <div className="item__inner"></div>
@@ -227,7 +227,7 @@ const Gyobok = () => {
                             HTML| CSS<br />
                             PHP | PHPMyAdmin<br />
                             jQuery | Git
-                        </p>a
+                        </p>
                     </div>
                     <div className="item__bg"></div>
                 </div>
