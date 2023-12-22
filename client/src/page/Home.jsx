@@ -208,16 +208,16 @@ const Home = () => {
         };
 
         // 함수 호출 - 각 링크에 대해 개별적으로 호출
-        linkClickHandler(".item.i3 .list a:nth-child(1)", "/gsap");
-        linkClickHandler(".item.i3 .list a:nth-child(2)", "/quiz");
-        linkClickHandler(".item.i3 .list a:nth-child(3)", "/search");
+        linkClickHandler(".item.i3 .list li:nth-child(1) a", "/gsap");
+        linkClickHandler(".item.i3 .list li:nth-child(2) a", "/quiz");
+        linkClickHandler(".item.i3 .list li:nth-child(3) a", "/search");
 
-        linkClickHandler(".item.i6 .list a:nth-child(1)", "/wpoint");
-        linkClickHandler(".item.i6 .list a:nth-child(2)", "/vite");
+        linkClickHandler(".item.i6 .list li:nth-child(1) a", "/wpoint");
+        linkClickHandler(".item.i6 .list li:nth-child(2) a", "/vite");
 
-        linkClickHandler(".item.i9 .list a:nth-child(1)", "/gyobok");
-        linkClickHandler(".item.i9 .list a:nth-child(2)", "/youtube");
-        linkClickHandler(".item.i9 .list a:nth-child(3)", "/movie");
+        linkClickHandler(".item.i9 .list li:nth-child(1) a", "/gyobok");
+        linkClickHandler(".item.i9 .list li:nth-child(2) a", "/youtube");
+        linkClickHandler(".item.i9 .list li:nth-child(3) a", "/movie");
 
         linkClickHandler(".item.i15 a", "/aboutme");
         linkClickHandler(".item.i16 a", "/contact");
@@ -257,7 +257,6 @@ const Home = () => {
                                 <li><a href="/search">3</a></li>
                             </ul>
                         </div>
-
                     </div>
                     <div className='item__bg'></div>
                 </div>

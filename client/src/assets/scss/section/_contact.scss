@@ -10,10 +10,10 @@ body {
 #item__wrap4 {
     display: grid;
     grid-template-areas:
-        "box1 box1 box3 box4"
-        "box5 box5 box7 box7"
-        "box5 box5 box15 box15"
-        "box5 box5 box15 box15"
+        "box1 box1 box5 box5"
+        "box7 box7 box5 box5"
+        "box7 box7 box5 box5"
+        "box3 box4 box5 box5"
     ;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 25vh);
@@ -151,7 +151,7 @@ body {
 #item__wrap4>div.comment h3 {
     font-weight: bold;
     padding-bottom: 10px;
-    font-size: 1.5vw;
+    font-size: 35px;
 }
 
 .comment__container {
@@ -172,21 +172,55 @@ body {
 
 #item__wrap4>div.commentinfo h3 {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 35px;
 }
 
 /* Style for comment input and submit button */
 .name-input {
-    width: 30%;
+    width: 200px;
+    height: 50px;
     padding: 5px;
     margin-top: 5px;
 }
 
 .comment-input {
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 200px;
     padding: 8px;
     margin-top: 5px;
+}
+
+.edit-input {
+    width: 40%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.edit {
+    padding: 2px;
+    background-color: #fff;
+}
+
+.cancel {
+    padding: 2px;
+    margin-left: 4px;
+    background-color: #fff;
+}
+
+.remove {
+    padding: 2px;
+    margin-left: 4px;
+    background-color: #fff;
+}
+
+.remove:hover,
+.edit:hover,
+.cancel:hover {
+    background-color: #000;
+    color: var(--white);
 }
 
 .submit {
@@ -197,11 +231,12 @@ body {
     border: none;
     cursor: pointer;
     height: 50%;
+    display: block;
 }
 
 .item.contact h3 {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 35px;
     margin-bottom: 5px;
 }
 
@@ -239,7 +274,7 @@ body {
 @media (max-width: 940px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 5.8vw;
+        font-size: 6vw;
         font-weight: bold;
         text-transform: uppercase;
         margin-top: 25px;
@@ -294,9 +329,26 @@ body {
     }
 
     .name-input {
-        width: 50%;
+        width: 200px;
+        height: 50px;
         padding: 5px;
         margin-top: 5px;
+    }
+
+    .comment-input {
+        width: 100%;
+        height: 150px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .edit-input {
+        width: 40%;
+        height: 100px;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
     }
 
     .submit {
@@ -306,7 +358,8 @@ body {
         color: white;
         border: none;
         cursor: pointer;
-        height: 20%;
+        height: 50%;
+        display: block;
     }
 }
 
@@ -322,12 +375,12 @@ body {
         grid-template-rows: repeat(8, 12.5vh);
         grid-template-areas:
             "box1 box1"
-            "box5 box7"
-            "box5 box7"
-            "box15 box15"
-            "box15 box15"
-            "box15 box15"
-            "box15 box15"
+            "box5 box5"
+            "box5 box5"
+            "box5 box5"
+            "box7 box7"
+            "box7 box7"
+            "box7 box7"
             "box4 box3"
         ;
 

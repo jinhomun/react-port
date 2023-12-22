@@ -279,19 +279,23 @@ const Wpoint = () => {
                 <div className="item i15 noB title">
                     <div className="item__inner">
                         <h3>code view</h3>
-                        <p className="desc">
-                            skill를 이용하여 만든 소스를
-                            깃을 통해 볼 수 있습니다.
-                        </p>
+                        <a href="https://github.com/jinhomun/webs2024/blob/main/site/index.html">
+                            <p className="desc">
+                                skill를 이용하여 만든 소스를
+                                깃을 통해 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i16 noR noB title">
                     <div className="item__inner">
                         <h3>site view</h3>
-                        <p className="desc">
-                            깃에 올린 파일을 직접 볼 수 있습니다.
-                        </p>
+                        <a href="https://github.com/jinhomun/webs2024/blob/main/site/index.html">
+                            <p className="desc">
+                                깃에 올린 파일을 직접 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>

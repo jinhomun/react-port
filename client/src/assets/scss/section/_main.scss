@@ -196,7 +196,7 @@ body {
 
 }
 
-#item__wrap .list ul li a {
+#item__wrap .list ul li:nth-child(1) a {
     display: inline-block;
     border: 1px solid #000;
     width: 30px;
@@ -209,6 +209,38 @@ body {
     font-size: 14px;
     background-color: #000;
     color: #fff;
+}
+
+#item__wrap .list ul li:nth-child(2) a {
+    display: inline-block;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 5px;
+}
+
+#item__wrap .list ul li:nth-child(3) a {
+    display: inline-block;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 5px;
 }
 
 #item__wrap .list ul li a:hover {
@@ -424,7 +456,7 @@ body {
         font-weight: bold;
         margin-bottom: 5vw;
         margin-left: 7vw;
-        position: absolute;
+        // position: absolute;
     }
 
     #item__wrap>div.title h3,
@@ -475,7 +507,7 @@ body {
     }
 
     #item__wrap>div.black__about img {
-        width: 50vw;
+        width: 37vw;
         height: 100%;
     }
 

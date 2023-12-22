@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgYoutube from '/../assets/img/youtube.png'
+import imgYoutube from '../assets/img/youtube.png'
 
 const Youtube = () => {
     useEffect(() => {

@@ -286,13 +286,13 @@ const Contact = () => {
                 </div>
                 <div className="item i15 contact">
                     <div className="item__inner">
-                        <h3>CONTACT</h3>
+                        {/* <h3>CONTACT</h3>
                         <form method="POST" action="https://formspree.io/answlsgh95@gmail.com">
                             <input type="text" name="username" placeholder="Your Name" />
                             <input type="email" name="email" placeholder="Your Email" />
                             <input className="message" name="message" placeholder="Message" />
                             <button type="submit">전송</button>
-                        </form>
+                        </form> */}
                     </div>
                     <div className="item__bg"></div>
                 </div>

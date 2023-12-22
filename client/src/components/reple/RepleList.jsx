@@ -1,12 +1,33 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import RepleContet from './RepleContet';
 
-const RepleList = () => {
+const RepleList = (props) => {
+    const [repleList, setRepleList] = useState([]);
+
+    useEffect(() => {
+        let body = {
+            reple: props.reple,
+            displayName: props.displayName,
+        }
+
+        axios.post("/api/reple/getReple", body).then((response) => {
+            if (response.data.success) {
+                setRepleList([...response.data.repleList]);
+            }
+        });
+    }, [props.reple, props.displayName]); // 의존성 배열 추가
+
     return (
-        <div className="comment__container">
-            <p className="name">작성자: 문**</p>
-            <p className="text">댓글: </p>
+        <div>
+            {repleList.map((reple, idx) => {
+                return (
+                    <RepleContet reple={reple} key={idx} />
+                )
+
+            })}
         </div>
     )
 }
 
-export default RepleList
+export default RepleList;

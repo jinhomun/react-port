@@ -175,7 +175,7 @@ const Vite = () => {
         // // Call the linkClickHandler function for each link with the correct destination
         // linkClickHandler(".item.i1 .list a", "/gsap","/quiz","/search");
         linkClickHandler(".item.i3 a", "/");
-        linkClickHandler(".item.i4 a", "/vite");
+        linkClickHandler(".item.i4 a", "/wpoint");
 
         // ...
 
@@ -190,7 +190,7 @@ const Vite = () => {
                         <li><a href="/wpoint">1</a></li>
                         <li className="active"><a href="/vite">2</a></li>
                     </ul> */}
-                        <h2>vite site</h2>
+                        <h2 className='vite'>vite site</h2>
                     </div>
                     <div className="item__bg"></div>
                 </div>

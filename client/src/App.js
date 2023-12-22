@@ -9,7 +9,7 @@ import Search from './page/Search'
 import Wpoint from './page/Wpoint'
 import Vite from './page/Vite'
 import Gyobok from './page/Gyobok'
-import Youtube from './page/Movie'
+import Youtube from './page/Youtube'
 import Movie from './page/Movie'
 import Contact from './page/Contact'
 
